@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Htlm, Css Project</title>
+  
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css">
+
+</head>
+<body>
+ <section class="sub-header">
+<nav>
+  <a href="index.html"><img src="images/logo.png" alt="logo_image"></a>
+  <div class="nav-links" id="navLinks">
+    <i class="fa fa-times" onclick="HideMenu()"></i>
+    <ul>
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="about.html">ABOUT</a></li>
+      <li><a href="course.html">COURSE</a></li>
+      <li><a href="blog.html">BLOG</a></li>
+      <li><a href="contact.html">CONTACT</a></li>
+    </ul>
+  </div>
+  <i class="fa fa-bars" onclick="ShowMenu()"></i>
+</nav>
+
+<h1>Contact Us</h1>
+
+ </section>
+
+ <!-- contact us content -->
+
+<section class="location">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d214587.41156412516!2d-96.73155254999999!3d32.82066455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864c19f77b45974b%3A0xb9ec9ba4f647678f!2sDallas%2C%20TX%2C%20USA!5e0!3m2!1sen!2sng!4v1684164437322!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</section>
+
+<section>
+
+<div class="row">
+  <div class="contact-col">
+    <div>
+      <i class="fa fa-home"></i>
+      <span>
+        <h5>XYZ Road, ABC Building</h5>
+        <p>Dallas, Texas, USA</p>
+      </span>
+    </div>
+    <div>
+      <i class="fa fa-phone"></i>
+      <span>
+        <h5>+2349023215892</h5>
+        <p>Monday to Saturday, 10AM to 6PM</p>
+      </span>
+    </div>
+    <div>
+      <i class="fa fa-envelope-o"></i>
+      <span>
+        <h5>silversharpconcept@gmail.com</h5>
+        <p>Email us your query</p>
+      </span>
+    </div>
+  </div>
+
+  <div class="contact-col">
+    <form action="form-handler.php" method="post">
+      <input type="text" name="name" placeholder="Enter your name" required>
+      <input type="text" name="email" placeholder="Enter email address" required>
+      <input type="text" name="subject" placeholder="Enter your subject" required>
+      <textarea rows="8" name="message" placeholder="Message" required></textarea>
+      <button type="submit" class="hero-btn red-btn">Send Message</button>
+    </form>
+  </div>
+</div>
+
+</section>
+
+
+
+<!-- Footer -->
+
+<section class="footer">
+  <h4>About Us</h4>
+  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat itaque consectetur modi ex necessitatibus<br> rerum natus a incidunt expedita est.</p>
+  <div class="icons">
+    <i class="fa fa-facebook"></i>
+    <i class="fa fa-twitter"></i>
+    <i class="fa fa-instagram"></i>
+    <i class="fa fa-linkedin"></i>
+  </div>
+  <p>Made with <i class="fa fa-heart-o"></i> by Silver#Concept</p>
+</section>
+
+
+
+
+<!-- Javascript for Toogle Menu -->
+<script>
+var navLinks=document.getElementById("navLinks");
+
+function ShowMenu(){
+  navLinks.style.right= "0";
+}
+
+function HideMenu(){
+  navLinks.style.right= "-200px";
+}
+
+
+
+</script>
+
+</body>
+</html>

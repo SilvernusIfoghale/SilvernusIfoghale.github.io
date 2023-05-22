@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Htlm, Css Project</title>
+  
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css">
+
+</head>
+<body>
+ <section class="sub-header">
+<nav>
+  <a href="index.html"><img src="images/logo.png" alt="logo_image"></a>
+  <div class="nav-links" id="navLinks">
+    <i class="fa fa-times" onclick="HideMenu()"></i>
+    <ul>
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="about.html">ABOUT</a></li>
+      <li><a href="course.html">COURSE</a></li>
+      <li><a href="blog.html">BLOG</a></li>
+      <li><a href="contact.html">CONTACT</a></li>
+    </ul>
+  </div>
+  <i class="fa fa-bars" onclick="ShowMenu()"></i>
+</nav>
+
+<h1>Our Courses</h1>
+
+ </section>
+
+<!-- Course -->
+<section class="course">
+  <h1>Courses We Offer</h1>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi atque unde minus magni mollitia excepturi maiores facere, dolore molestias ea ut? Laudantium maxime iure fugit quasi enim quos, aliquid ipsum?</p>
+<div class="row">
+  <div class="course-col">
+    <h3>Intermediate</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure commodi architecto, quasi, odit quo iste minus, quam fugiat inventore deleniti modi libero. Ab error, cumque placeat earum illo repellendus magnam?</p>
+  </div>
+
+  <div class="course-col">
+    <h3>Degree</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure commodi architecto, quasi, odit quo iste minus, quam fugiat inventore deleniti modi libero. Ab error, cumque placeat earum illo repellendus magnam?</p>
+  </div>
+
+  <div class="course-col">
+    <h3>Post Graduate</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure commodi architecto, quasi, odit quo iste minus, quam fugiat inventore deleniti modi libero. Ab error, cumque placeat earum illo repellendus magnam?</p>
+  </div>
+</div>
+
+</section>
+
+<!-- facilities -->
+<section class="facilities">
+
+  <h1>Our Facilities</h1>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum placeat animi repellat soluta dolorem voluptates.</p>
+  
+  <div class="row">
+    <div class="facilities-col">
+      <img src="images/library.png" alt="library_image">
+      <h3>World Class Library</h3>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi, doloribus!</p>
+    </div>
+  
+    <div class="facilities-col">
+      <img src="images/basketball.png" alt="basketball_image">
+      <h3>Largest Play Ground</h3>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi, doloribus!</p>
+    </div>
+  
+    <div class="facilities-col">
+      <img src="images/cafeteria.png" alt="cafeteria_image">
+      <h3>Tasty and Healthy Food</h3>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi, doloribus!</p>
+    </div>
+  </div>
+  </section>
+  
+
+<!-- Footer -->
+
+<section class="footer">
+  <h4>About Us</h4>
+  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat itaque consectetur modi ex necessitatibus<br> rerum natus a incidunt expedita est.</p>
+  <div class="icons">
+    <i class="fa fa-facebook"></i>
+    <i class="fa fa-twitter"></i>
+    <i class="fa fa-instagram"></i>
+    <i class="fa fa-linkedin"></i>
+  </div>
+  <p>Made with <i class="fa fa-heart-o"></i> by Silver#Concept</p>
+</section>
+
+
+
+
+<!-- Javascript for Toogle Menu -->
+<script>
+var navLinks=document.getElementById("navLinks");
+
+function ShowMenu(){
+  navLinks.style.right= "0";
+}
+
+function HideMenu(){
+  navLinks.style.right= "-200px";
+}
+
+
+
+</script>
+
+</body>
+</html>

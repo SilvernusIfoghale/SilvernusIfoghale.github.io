@@ -16,12 +16,10 @@
             <!-- Header section begins here-->
         <div class="header">
             <h2>iShadeed Store.</h2>
-            
-             
-          <span class="nav-link"> 
-           <div class="icon">
-                <a href="#" class="fas fa-bars" id="menu-bars"></a>
-            </div>
+ 
+         <a href="#" class="fas fa-bars" id="menu-bars"></a>
+      
+          <span class="nav-link active"> 
             <a href="#" class="icons-link">Home</a>
             <a href="#" class="icons-link">About</a>
             <a href="#" class="icons-link">Works</a>
@@ -129,7 +127,16 @@
 
 
     </div>
+<script>
+    let menu = document.querySelector('#menu-bars');
+    let navbar = document.querySelector('.nav-link');
 
+    menu.onclick = () => {
+        menu.classList.toggle('fa-times');
+        navbar.classList.toggle('active');}
+    
+    
+</script>
 
 </body>
 </html>

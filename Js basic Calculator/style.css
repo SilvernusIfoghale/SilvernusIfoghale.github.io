@@ -1,0 +1,125 @@
+:root {
+  --primary-color: hsl(0, 0%, 95%);
+  --secondary-color: hsl(0, 0%, 15%);
+  --tertiary-color: hsl(0, 0%, 30%);
+  --elementary-color: hsl(0, 0%, 40%);
+}
+
+.lightmode {
+  --primary-color: hsl(0, 0%, 15%);
+  --secondary-color: hsl(0, 0%, 95%);
+  --tertiary-color: hsl(0, 0%, 80%);
+  --elementary-color: hsl(0, 0%, 75%);
+}
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--primary-color);
+}
+.calculator {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--secondary-color);
+  border-radius: 15px;
+  max-width: 500px;
+  overflow: hidden;
+}
+.switch-mode {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+input {
+  border: 0;
+  border: none;
+}
+#display {
+  width: 98%;
+  /* padding: 10px; */
+  font-size: 4.5rem;
+  text-align: right;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+#keys {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  padding: 25px;
+}
+
+button {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  border: none;
+  background-color: var(--tertiary-color);
+  color: var(--primary-color);
+  font-size: 3rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--elementary-color);
+}
+button:active {
+  background-color: hsl(0, 0%, 50%);
+}
+.operation-btn {
+  background-color: hsl(35, 100%, 55%);
+}
+.operation-btn:hover {
+  background-color: hsl(35, 100%, 65%);
+}
+.operation-btn:active {
+  background-color: hsl(35, 100%, 75%);
+}
+
+@media (max-width: 375px) {
+  .calculator {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--secondary-color);
+    border-radius: 15px;
+    max-width: 500px;
+    overflow: hidden;
+  }
+  .switch-mode {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+  }
+  input {
+    border: 0;
+    border: none;
+  }
+  #display {
+    width: 98%;
+    /* padding: 10px; */
+    font-size: 2.5rem;
+    text-align: right;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+  }
+  #keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+    padding: 10px;
+  }
+
+  button {
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+    border: none;
+    background-color: var(--tertiary-color);
+    color: var(--primary-color);
+    font-size: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+  }
+}

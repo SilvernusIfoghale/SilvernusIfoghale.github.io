@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  margin: 0 auto;
+  width: 70%;
+}
+
+h1 {
+  font-size: 35px;
+  padding-bottom: 10px;
+}
+p {
+  font-size: 18px;
+  line-height: 1.5rem;
+  padding-bottom: 10px;
+}
+
+ul {
+  text-align: center;
+  padding: 15px;
+  background-color: silver;
+  list-style: none;
+  cursor: pointer;
+}
+ul li {
+  padding: 10px;
+  display: inline;
+}
+
+ul li:hover {
+  background-color: #fff;
+}
+
+ul li a {
+  font-size: 18px;
+  text-decoration: none;
+}

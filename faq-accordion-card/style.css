@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  background-image: linear-gradient(
+    to bottom,
+    hsl(273, 75%, 66%),
+    hsl(240, 73%, 65%)
+  );
+  height: 105vh;
+  font-size: 12px;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.guide-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  border-radius: 25px;
+  width: 800px;
+  height: 450px;
+  margin: 0 10px;
+}
+.content-container {
+  background-image: url("images/bg-pattern-desktop.svg");
+  background-size: contain;
+  background-position: -410px -150px;
+  background-repeat: no-repeat;
+  background-size: 85%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  overflow: hidden;
+  border-radius: 25px;
+  width: 800px;
+  height: 450px;
+  background-color: #fff;
+  margin: 0 10px;
+}
+
+.text-container {
+  padding-right: 50px;
+  padding-left: 10px;
+  min-width: 500px;
+}
+.text-container h1 {
+  padding-bottom: 20px;
+}
+.img-container {
+  max-width: 400px;
+  margin-left: -40px;
+}
+.float-image {
+  position: absolute;
+  inset: 190px -41px;
+}
+
+.float-image img {
+  max-width: 120px;
+}
+#img {
+  width: 100%;
+  object-fit: contain;
+}
+.group {
+  border-bottom: 1px solid rgb(231, 230, 230);
+  padding-bottom: 10px;
+}
+.question {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 5px;
+}
+.answers {
+  padding: 5px 0;
+  display: none;
+}
+
+.question button {
+  border: none;
+  background-color: transparent;
+}
+.visible {
+  display: block;
+}
+.btn {
+  z-index: 1;
+  transition: 0.4s ease-in-out;
+}
+.btn-rotate {
+  transform: rotate(180deg);
+}
+.bold {
+  font-weight: bold;
+}
+
+/* Media Query  */
+
+@media screen and (max-width: 475px) {
+  .guide-wrapper {
+    gap: 2rem;
+    border-radius: 25px;
+    width: 400px;
+    height: 550px;
+    margin: 0 10px;
+  }
+  .content-container {
+    flex-direction: column;
+    overflow: visible;
+    margin: 0 15px;
+    width: 400px;
+    height: 600px;
+    justify-content: flex-start;
+    background-position: 25px -210px;
+  }
+
+  .img-container {
+    max-width: 300px;
+    margin-top: -130px;
+    margin-left: 0px;
+  }
+  .text-container h1 {
+    text-align: center;
+    padding-top: 5px;
+  }
+  .text-container {
+    padding-right: 50px;
+    padding-left: 50px;
+    min-width: 430px;
+  }
+  .float-image {
+    position: absolute;
+    inset: -70px 60px;
+  }
+}

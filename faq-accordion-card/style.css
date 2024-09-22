@@ -106,20 +106,89 @@ body {
 }
 
 /* Media Query  */
+@media screen and (max-width: 810px) {
+  .content-container {
+    width: 570px;
+    height: 500px;
+    margin: 0 auto;
+  }
+
+  .text-container {
+    padding-right: 50px;
+    padding-left: 10px;
+    min-width: 300px;
+  }
+  .img-container {
+    max-width: 310px;
+    margin-top: -130px;
+  }
+
+  .float-image {
+    position: absolute;
+    inset: 140px 10px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .container {
+    margin: 0 auto;
+    margin-top: 40px;
+  }
+  .guide-wrapper {
+    gap: 2rem;
+    border-radius: 25px;
+    width: 500px;
+    height: 550px;
+    margin: 0 auto;
+  }
+  .content-container {
+    margin: 0 auto;
+    flex-direction: column;
+    overflow: visible;
+    /* margin: 0 5px; */
+    width: 430px;
+    height: 600px;
+    justify-content: flex-start;
+    background-position: 25px -210px;
+  }
+
+  .img-container {
+    max-width: 310px;
+    margin-top: -130px;
+  }
+  .text-container h1 {
+    text-align: center;
+    padding-top: 5px;
+    margin-left: 0;
+  }
+  .text-container {
+    padding: 0 20px;
+    min-width: 380px;
+  }
+  .float-image {
+    position: absolute;
+    inset: -70px 60px;
+  }
+}
 
 @media screen and (max-width: 475px) {
+  .container {
+    margin: 0 auto;
+
+    overflow-x: hidden;
+  }
   .guide-wrapper {
     gap: 2rem;
     border-radius: 25px;
     width: 400px;
     height: 550px;
-    margin: 0 10px;
+    margin: 0 auto;
   }
   .content-container {
+    margin: 0 auto;
     flex-direction: column;
     overflow: visible;
-    margin: 0 15px;
-    width: 400px;
+    /* margin: 0 5px; */
+    width: 330px;
     height: 600px;
     justify-content: flex-start;
     background-position: 25px -210px;
@@ -128,16 +197,15 @@ body {
   .img-container {
     max-width: 300px;
     margin-top: -130px;
-    margin-left: 0px;
   }
   .text-container h1 {
     text-align: center;
     padding-top: 5px;
+    margin-left: 0;
   }
   .text-container {
-    padding-right: 50px;
-    padding-left: 50px;
-    min-width: 430px;
+    padding: 0 20px;
+    min-width: 330px;
   }
   .float-image {
     position: absolute;

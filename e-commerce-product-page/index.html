@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>E-commerce product page</title>
+  </head>
+  <body>
+    <div class="container-wrapper">
+      <div class="container">
+        <nav class="nav-container">
+          <div class="left-nav">
+            <div class="main-nav">
+              <div class="toggle-container">
+                <img
+                  src="images/icon-menu.svg"
+                  alt="toggle-icon"
+                  id="open-btn"
+                />
+              </div>
+              <div class="nav-logo">
+                <img src="images/logo.svg" alt="sneaker-logo" />
+              </div>
+              <ul>
+                <li id="close-btn">
+                  <img src="images/icon-close.svg" alt="" />
+                </li>
+                <li><a href="#">Collections</a></li>
+                <li><a href="#">Men</a></li>
+                <li><a href="#">Women</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="right-nav-content">
+            <div class="right-nav">
+              <div class="cart-count"></div>
+              <img src="images/icon-cart.svg" alt="cart-icon" />
+            </div>
+            <div class="profile-nav">
+              <img src="images/image-avatar.png" alt="profile-image" id="img" />
+            </div>
+          </div>
+          <!-- Cart  -->
+          <div class="cart-details-container">
+            <div class="cart-title">
+              <h3>Cart</h3>
+            </div>
+            <div class="cart-details">
+              <div class="cart-img-container">
+                <img src="images/image-product-1.jpg" alt="" class="cart-img" />
+              </div>
+              <div class="cart-desc">
+                <b id="cart-title-text">Fall Limited Edition Sneakers</b>
+                <p>
+                  <span id="price-tag">$125.00</span>
+                  <span id="price-mul">x <span id="mul"></span> </span>
+                  <b id="total">$<span id="total_price"></span></b>
+                </p>
+              </div>
+              <div class="cart-delete">
+                <img src="images/icon-delete.svg" alt="" id="delete-icon" />
+              </div>
+            </div>
+            <div class="cart-empty"><h45>Your cart is empty</h45></div>
+            <button>Checkout</button>
+          </div>
+        </nav>
+        <main class="main-container">
+          <aside class="aside-container">
+            <div class="nav-button previous" id="previous-btn">
+              <img src="images/icon-previous.svg" alt="" class="nav-btn-prev" />
+            </div>
+            <div class="img-main">
+              <img
+                src="images/image-product-1.jpg"
+                alt=""
+                class="img img-Big"
+              />
+            </div>
+            <div class="nav-button next" id="next-btn">
+              <img src="images/icon-next.svg" alt="" class="nav-btn-next" />
+            </div>
+            <div class="thumbnails-img">
+              <div class="img-sub-img">
+                <img
+                  src="images/image-product-1.jpg"
+                  alt=""
+                  class="img img-version"
+                />
+              </div>
+              <div class="img-sub-img">
+                <img
+                  src="images/image-product-2.jpg"
+                  alt=""
+                  class="img img-version"
+                />
+              </div>
+              <div class="img-sub-img">
+                <img
+                  src="images/image-product-3.jpg"
+                  alt=""
+                  class="img img-version"
+                />
+              </div>
+              <div class="img-sub-img">
+                <img
+                  src="images/image-product-4.jpg"
+                  alt=""
+                  class="img img-version"
+                />
+              </div>
+            </div>
+          </aside>
+          <article class="article-container">
+            <h5>SNEAKER COMPANY</h5>
+            <h2>Fall Limited Edition Sneakers</h2>
+            <p>
+              These low-profile sneakers are your perfect casual wear companion.
+              Featuring a durable rubber outer sole, they’ll withstand
+              everything the weather can offer.
+            </p>
+            <div class="price-content">
+              <h3>$125.00 <span>50%</span></h3>
+              <h5>$250.00</h5>
+            </div>
+            <div class="btn-container">
+              <div class="btn-group">
+                <button id="minus-btn">
+                  <img src="images/icon-minus.svg" alt="" />
+                </button>
+                <button id="cart-number">0</button>
+                <button id="add-btn">
+                  <img src="images/icon-plus.svg" alt="" />
+                </button>
+              </div>
+              <div class="btn-add-to-cart">
+                <button>
+                  <img src="images/icon-cart.svg" alt="" id="cart-img" />
+                  <b>Add to Cart</b>
+                </button>
+              </div>
+            </div>
+          </article>
+        </main>
+
+        <!-- Float Image and ThumbNail  -->
+        <div class="float-background">
+          <aside class="aside-container" id="float-image">
+            <div class="close-img">
+              <!-- <img src="images/icon-close.svg" alt="" class="btn-close" /> -->
+              <span class="btn-close">
+                <i class="fa-solid fa-xmark"></i>
+              </span>
+            </div>
+            <div class="float-top">
+              <div class="navigation-btn" id="previous">
+                <!-- <img src="images/icon-previous.svg" alt="" /> -->
+                <span>
+                  <i class="fa-solid fa-less-than"></i>
+                </span>
+              </div>
+
+              <div class="navigation-btn" id="next">
+                <!-- <img src="images/icon-next.svg" alt="" /> -->
+                <span>
+                  <i class="fa-solid fa-greater-than"></i>
+                </span>
+              </div>
+            </div>
+            <div class="img-main" id="img-main">
+              <img
+                src="images/image-product-1.jpg"
+                alt=""
+                class="img img-Big-float"
+              />
+            </div>
+            <div class="thumbnails-img" id="thumbnails-img">
+              <div class="img-sub-img">
+                <img
+                  src="images/image-product-1.jpg"
+                  alt=""
+                  class="img img-version-float"
+                />
+              </div>
+              <div class="img-sub-img">
+                <img
+                  src="images/image-product-2.jpg"
+                  alt=""
+                  class="img img-version-float"
+                />
+              </div>
+              <div class="img-sub-img">
+                <img
+                  src="images/image-product-3.jpg"
+                  alt=""
+                  class="img img-version-float"
+                />
+              </div>
+              <div class="img-sub-img">
+                <img
+                  src="images/image-product-4.jpg"
+                  alt=""
+                  class="img img-version-float"
+                />
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

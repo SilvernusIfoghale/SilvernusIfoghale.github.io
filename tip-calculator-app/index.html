@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <section class="container">
+      <header>
+        <p>SPLI <br />TTER</p>
+      </header>
+      <section class="container-content">
+        <main class="main-section">
+          <section class="left-container">
+            <div class="bills">
+              <label for="bill"><p>Bill</p></label>
+              <div class="input-container">
+                $
+                <input type="text" id="bill" class="input" placeholder="0" />
+              </div>
+            </div>
+            <div class="tips">
+              <label for="select-tip"><p>Select Tip %</p></label>
+
+              <div class="btn-section">
+                <button class="percentage-btn">5%</button>
+                <button class="percentage-btn">10%</button>
+                <button class="percentage-btn">15%</button>
+                <button class="percentage-btn">25%</button>
+                <button class="percentage-btn">50%</button>
+                <div class="btn-input">
+                  <input type="text" id="custom" placeholder="Custom" />
+                  <!-- <span id="custom-read-only"></span> -->
+                </div>
+              </div>
+            </div>
+
+            <div class="people">
+              <label for="people" id="label">
+                <p>Number of people</p>
+                <p class="warning">Can't be zero</p>
+              </label>
+              <div class="input-container people-container">
+                <i class="fa-solid fa-user"></i>
+                <input type="text" id="people" class="input" placeholder="0" />
+              </div>
+            </div>
+          </section>
+          <section class="right-container">
+            <div class="right-top">
+              <div class="tip-top">
+                <p>Tip Amount</p>
+                <p class="person">/ Person</p>
+              </div>
+              <div class="amount">
+                <p class="dollar">$<span id="person-tip">0.00</span></p>
+              </div>
+            </div>
+            <div class="right-top">
+              <div class="tip-top">
+                <p>Tip Amount</p>
+                <p class="person">/ Person</p>
+              </div>
+              <div class="amount">
+                <p class="dollar">$<span id="total-tip">0.00</span></p>
+              </div>
+            </div>
+            <button class="reset">RESET</button>
+          </section>
+        </main>
+      </section>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>

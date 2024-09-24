@@ -26,6 +26,7 @@ const btn_close = document.querySelector(".close-img");
 
 img_El_float.forEach((img, imgIndex) => {
   img.addEventListener("click", () => {
+    // console.log("clicked");
     main_img_float.src = img.src;
     previous_img_index = imgIndex;
     // console.log(previous_img_index);
@@ -121,8 +122,6 @@ add_El.addEventListener("click", () => {
       total.textContent = (item_count.textContent * 125).toFixed(2);
       cart_count.textContent = item_count.textContent;
     }
-    //   cart_empty.classList.add("hide");
-    //   cart_details.classList.add("show-important");
   }
 });
 
@@ -136,9 +135,6 @@ minus_El.addEventListener("click", () => {
       total.textContent = (item_count.textContent * 125).toFixed(2);
       multiply.textContent = item_count.textContent;
       if (item_count.textContent <= 0) {
-        //   cart_count.classList.remove("visible");
-        //   cart_empty.classList.remove("hide");
-        //   cart_details.classList.remove("show-important");
       }
     }
   }

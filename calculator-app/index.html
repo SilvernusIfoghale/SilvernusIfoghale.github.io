@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container-wrapper">
+      <div class="container">
+        <!-- nav section  -->
+        <nav class="nav-container">
+          <h3>calc</h3>
+          <div class="right-section">
+            <b>THEME</b>
+            <div class="theme-wrapper">
+              <div class="range-value">
+                <p>1</p>
+                <p>2</p>
+                <p>3</p>
+              </div>
+              <div class="range-container">
+                <input
+                  type="range"
+                  name="range"
+                  class="range"
+                  min="1"
+                  max="3"
+                  step="1"
+                />
+              </div>
+            </div>
+          </div>
+        </nav>
+        <!-- screen  section -->
+        <div class="screen-container">
+          <input type="text" class="screen" />
+        </div>
+        <!-- button section  -->
+        <main class="btn-container">
+          <div data-key="7" class="key action">
+            <span>7</span>
+          </div>
+          <div data-key="8" class="key action">
+            <span>8</span>
+          </div>
+          <div data-key="9" class="key action">
+            <span>9</span>
+          </div>
+          <div data-key="backspace" class="key action del">
+            <span>DEL</span>
+          </div>
+
+          <div data-key="4" class="key action">
+            <span>4</span>
+          </div>
+          <div data-key="5" class="key action">
+            <span>5</span>
+          </div>
+          <div data-key="6" class="key action">
+            <span>6</span>
+          </div>
+          <div data-key="+" class="key action">
+            <span>+</span>
+          </div>
+          <div data-key="1" class="key action">
+            <span>1</span>
+          </div>
+          <div data-key="2" class="key action">
+            <span>2</span>
+          </div>
+          <div data-key="3" class="key action">
+            <span>3</span>
+          </div>
+          <div data-key="-" class="key action">
+            <span>-</span>
+          </div>
+          <div data-key="." class="key action">
+            <span>.</span>
+          </div>
+
+          <div data-key="0" class="key action">
+            <span>0</span>
+          </div>
+
+          <div data-key="/" class="key action">
+            <span>÷</span>
+          </div>
+          <div data-key="*" class="key action">
+            <span>x</span>
+          </div>
+
+          <div data-key="clear" class="key action reset">
+            <span>RESET</span>
+          </div>
+
+          <div data-key="=" class="key action equal">
+            <span>=</span>
+          </div>
+        </main>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

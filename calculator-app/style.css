@@ -1,0 +1,261 @@
+:root {
+  /* Theme 1  */
+
+  /* background  */
+  --main-background: hsl(0, 0%, 90%);
+  --toggle-keys-background: hsl(0, 5%, 81%);
+  --screen-background: hsl(0, 0%, 93%);
+  /* background  */
+
+  /* Keys */
+
+  --del-reset-background: hsl(185, 42%, 37%);
+  --del-reset-shadow: hsl(185, 58%, 25%);
+
+  --equal-toggle-background: hsl(25, 98%, 40%);
+  --equal-toggle-shadow: hsl(25, 99%, 27%);
+
+  --key-background: hsl(45, 7%, 89%);
+  --key-shadow: hsl(35, 11%, 61%);
+
+  /* Keys */
+
+  /* Text  */
+
+  --dark-text-color: hsl(60, 10%, 19%);
+  --light-text-color: hsl(0, 0%, 100%);
+
+  /* Text  */
+}
+
+.theme-2 {
+  /* Theme 2  */
+
+  /* background  */
+  --main-background: hsl(222, 26%, 31%);
+  --toggle-keys-background: hsl(223, 31%, 20%);
+  --screen-background: hsl(224, 36%, 15%);
+  /* background  */
+
+  /* Keys */
+
+  --del-reset-background: hsl(225, 21%, 49%);
+  --del-reset-shadow: hsl(224, 28%, 35%);
+
+  --equal-toggle-background: hsl(6, 63%, 50%);
+  --equal-toggle-shadow: hsl(6, 70%, 34%);
+
+  --key-background: hsl(30, 25%, 89%);
+  --key-shadow: hsl(29, 68%, 51%);
+
+  /* Keys */
+
+  /* Text  */
+
+  --light-text-color: hsl(220, 54%, 81%);
+  --dark-text-color: hsl(12, 4%, 53%);
+
+  /* Text  */
+}
+
+.theme-3 {
+  /* Theme 3  */
+
+  /* background  */
+  --main-background: hsl(268, 75%, 9%);
+  --toggle-keys-background: hsl(268, 71%, 12%);
+  --screen-background: hsl(224, 36%, 15%);
+  /* background  */
+
+  /* Keys */
+
+  --del-reset-background: hsl(281, 89%, 26%);
+  --del-reset-shadow: hsl(285, 91%, 52%);
+
+  --equal-toggle-background: hsl(176, 100%, 44%);
+  --equal-toggle-shadow: hsl(177, 92%, 70%);
+
+  --key-background: hsl(268, 47%, 21%);
+  --key-shadow: hsl(290, 70%, 36%);
+
+  /* Keys */
+
+  /* Text  */
+
+  --dark-text-color: hsl(52, 100%, 62%);
+  --light-text-color: hsl(0, 0%, 100%);
+
+  /* Text  */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--main-background);
+  font-family: "League Spartan", sans-serif;
+  color: var(--dark-text-color);
+}
+.container-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  width: 100%;
+  max-width: 375px;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 5px;
+}
+.nav-container h3 {
+  font-size: 1.5rem;
+}
+.right-section {
+  display: flex;
+  align-items: flex-end;
+  gap: 15px;
+}
+
+/* Theme text  */
+.right-section b {
+  font-size: 0.6rem;
+  padding-bottom: 7px;
+  font-weight: bold;
+}
+
+.range-value {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 5px;
+}
+.range-value p {
+  font-size: 0.6rem;
+  font-weight: bold;
+}
+.range-container {
+  position: relative;
+}
+.range {
+  width: 50px;
+  appearance: none;
+  -webkit-appearance: none;
+  background-color: var(--toggle-keys-background);
+  border-radius: 10px;
+  height: 19px;
+  padding: 5px 2px;
+}
+.range::-webkit-slider-thumb {
+  appearance: none;
+  background-color: var(--equal-toggle-background);
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+}
+.range::-moz-range-thumb {
+  appearance: none;
+  background-color: var(--equal-toggle-background);
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+.range:hover {
+  cursor: pointer;
+}
+
+/* Screen section  */
+
+.screen-container {
+  width: 100%;
+  height: 100px;
+  border-radius: 10px;
+  margin-top: 20px;
+  margin-bottom: 17px;
+  overflow: hidden;
+}
+.screen {
+  background-color: var(--screen-background);
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  text-align: right;
+  padding: 0 5px;
+  font-size: 3rem;
+  font-weight: bold;
+  color: var(--dark-text-color);
+}
+
+/* Button Section  */
+
+.btn-container {
+  background-color: var(--toggle-keys-background);
+  padding: 1.5rem;
+  border-radius: 10px;
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1rem;
+  box-shadow: inset 0px 0px 2px rgba(0, 0, 0, 0.1);
+  font-weight: bold;
+  font-size: 1.5rem;
+  border-radius: 5px;
+}
+
+.btn-container .key {
+  background-color: var(--key-background);
+  border-bottom: 3px solid var(--key-shadow);
+  width: 100%;
+  height: 45px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.btn-container .key:hover {
+  opacity: 90%;
+  color: var(--dark-text-color);
+  background-color: var(--light-text-color);
+  cursor: pointer;
+}
+
+.btn-container .key span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.btn-container .del,
+.btn-container .reset,
+.btn-container .equal {
+  color: var(--light-text-color);
+
+  text-align: center;
+}
+
+.btn-container .del,
+.btn-container .reset {
+  background-color: var(--del-reset-background);
+  border-bottom: 3px solid var(--del-reset-shadow);
+}
+.btn-container .reset {
+  grid-column: span 2;
+}
+.btn-container .equal {
+  grid-column: span 2;
+  background-color: var(--equal-toggle-background);
+  border-bottom: 3px solid var(--equal-toggle-shadow);
+}
+/* 
+:root:has(.range:hover) {
+  --equal-toggle-background: red;
+} */

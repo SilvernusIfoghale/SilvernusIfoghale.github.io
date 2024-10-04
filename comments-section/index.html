@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Interactive comments section</title>
+  </head>
+  <body>
+    <div class="container-wrapper">
+      <div class="container">
+        <section>
+          <div class="single-post">
+            <div class="left">
+              <button class="img-container plus-top btn-style">
+                <img src="images/icon-plus.svg" alt="" />
+              </button>
+              <b class="top-value">12</b>
+              <button class="img-container minus-top btn-style">
+                <img src="images/icon-minus.svg" alt="" />
+              </button>
+            </div>
+            <div class="middle">
+              <div class="top">
+                <div class="top-left">
+                  <img
+                    src="images/avatars/image-amyrobson.png"
+                    alt=""
+                    id="img"
+                    class="img"
+                  />
+                  <b>amyrobson</b>
+                  <p>1 month ago</p>
+                </div>
+                <div class="top-right">
+                  <button class="top-reply btn-style">
+                    <img src="images/icon-reply.svg" alt="" />
+                    <b> Reply</b>
+                  </button>
+                </div>
+              </div>
+              <div class="middle-text">
+                <p>
+                  Impressive! Though it seems the drag feature could be
+                  improved. But overall it looks incredible. You've nailed the
+                  design and the responsiveness at various breakpoints works
+                  really well.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Modal Section  -->
+        <!-- Reply Modal  -->
+        <!-- div.reply-section .bar-left  -->
+        <div class="reply-section">
+          <div class=".bar-left"></div>
+          <div class="modal top-reply-modal">
+            <div class="bottom-section">
+              <img
+                src="images/avatars/image-juliusomo.png"
+                alt="user-img"
+                class="img"
+              />
+              <textarea
+                name=""
+                id=""
+                style="resize: none"
+                placeholder="Add a comment..."
+                class="reply-text-top"
+              >
+@amyrobson, </textarea
+              >
+              <button class="btn-send btn-top-modal-reply">Reply</button>
+            </div>
+          </div>
+        </div>
+        <!-- Reply Modal  -->
+
+        <!-- Modal Edit  -->
+
+        <div class="reply-section">
+          <div class=".bar-left"></div>
+          <div class="top-modal-width modal-edit-top">
+            <div class="single-post manage-width">
+              <div class="left">
+                <button class="img-container btn-style up-3">
+                  <img src="images/icon-plus.svg" alt="" />
+                </button>
+                <b class="text-3">0</b>
+                <button class="img-container btn-style down-3">
+                  <img src="images/icon-minus.svg" alt="" />
+                </button>
+              </div>
+              <div class="middle top-modal-width">
+                <div class="top">
+                  <div class="top-left">
+                    <img
+                      src="images/avatars/image-juliusomo.png"
+                      alt=""
+                      class="img"
+                    />
+                    <b>juliusomo</b>
+                    <span id="you">You</span>
+                    <p>Now</p>
+                  </div>
+                  <div class="top-right edit-delete-btn">
+                    <span class="delete-container delete-top">
+                      <img src="images/icon-delete.svg" alt="" /><b
+                        class="delete"
+                        >Delete</b
+                      >
+                    </span>
+                    <span class="edit-container">
+                      <img src="images/icon-edit.svg" alt="" />
+                      <b class="edit">Edit</b>
+                    </span>
+                  </div>
+                </div>
+                <div class="middle-text top-text-width">
+                  <p class="width-manage"></p>
+                  <p class="top-updated-text">
+                    <b class="quote">@remsesmiron</b>
+                  </p>
+
+                  <div class="bottom-section modal-width">
+                    <textarea
+                      name=""
+                      id=""
+                      style="resize: none"
+                      placeholder="Add a comment..."
+                      class="text-area-top"
+                    >
+  @remsesmiron</textarea
+                    >
+                  </div>
+                  <div
+                    class="bottom-section"
+                    style="justify-content: flex-end; padding: 5px 0"
+                  >
+                    <button class="btn-send send-top">UPDATE</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Modal Edit  -->
+
+        <section>
+          <div class="single-post">
+            <div class="left">
+              <button class="img-container plus-next btn-style">
+                <img src="images/icon-plus.svg" alt="" />
+              </button>
+              <b class="next-value">5</b>
+              <button class="img-container minus-next btn-style">
+                <img src="images/icon-minus.svg" alt="" />
+              </button>
+            </div>
+            <div class="middle">
+              <div class="top">
+                <div class="top-left">
+                  <img
+                    src="images/avatars/image-maxblagun.png"
+                    alt=""
+                    id="img"
+                    class="img"
+                  />
+                  <b>maxblagun</b>
+                  <p>2 weeks ago</p>
+                </div>
+                <div class="top-right">
+                  <button class="top-next btn-style">
+                    <img src="images/icon-reply.svg" alt="" />
+                    <b> Reply</b>
+                  </button>
+                </div>
+              </div>
+              <div class="middle-text">
+                <p>
+                  Woah, your project looks awesome! How long have you been
+                  coding for? I'm still new, but think I want to dive into React
+                  as well soon. Perhaps you can give me an insight on where I
+                  can learn React? Thanks!
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- End of Modal Section  -->
+
+        <!-- Modal Section  -->
+        <!-- Reply Modal  -->
+        <div class="reply-section">
+          <div class=".bar-left"></div>
+          <div class="modal next-reply-modal">
+            <div class="bottom-section">
+              <img
+                src="images/avatars/image-juliusomo.png"
+                alt="user-img"
+                class="img"
+              />
+              <textarea
+                name=""
+                id=""
+                style="resize: none"
+                placeholder="Add a comment..."
+                class="reply-text-next"
+              >
+@maxblagun, </textarea
+              >
+              <button class="btn-send btn-next-modal-reply">Reply</button>
+            </div>
+          </div>
+        </div>
+        <!-- Reply Modal  -->
+
+        <!-- Modal Edit  -->
+        <div class="reply-section">
+          <div class=".bar-left"></div>
+          <div class="top-modal-width modal-edit-next">
+            <div class="single-post manage-width">
+              <div class="left">
+                <button class="img-container btn-style up-2">
+                  <img src="images/icon-plus.svg" alt="" />
+                </button>
+                <b class="text-2">0</b>
+                <button class="img-container btn-style down-2">
+                  <img src="images/icon-minus.svg" alt="" />
+                </button>
+              </div>
+              <div class="middle top-modal-width">
+                <div class="top">
+                  <div class="top-left">
+                    <img
+                      src="images/avatars/image-juliusomo.png"
+                      alt=""
+                      class="img"
+                    />
+                    <b>juliusomo</b>
+                    <span id="you">You</span>
+                    <p>Now</p>
+                  </div>
+                  <div class="top-right edit-delete-btn">
+                    <span class="delete-container delete-next">
+                      <img src="images/icon-delete.svg" alt="" /><b
+                        class="delete"
+                        >Delete</b
+                      >
+                    </span>
+                    <span class="next-container">
+                      <img src="images/icon-edit.svg" alt="" />
+                      <b class="edit">Edit</b>
+                    </span>
+                  </div>
+                </div>
+                <div class="middle-text top-text-width">
+                  <p class="width-manage"></p>
+                  <p class="next-updated-text">
+                    <b class="quote">@remsesmiron</b>
+                  </p>
+
+                  <div class="bottom-section modal-width">
+                    <textarea
+                      name=""
+                      id=""
+                      style="resize: none"
+                      placeholder="Add a comment..."
+                      class="text-area-next"
+                    >
+@remsesmiron</textarea
+                    >
+                  </div>
+                  <div
+                    class="bottom-section"
+                    style="justify-content: flex-end; padding: 5px 0"
+                  >
+                    <button class="btn-send send-next">UPDATE</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Modal Edit  -->
+
+        <!-- Reply Section  -->
+
+        <!-- last section comment  -->
+        <section>
+          <div class="reply-section">
+            <div class="bar-left"></div>
+            <div class="single-post">
+              <div class="left">
+                <button class="img-container btn-style plus-last">
+                  <img src="images/icon-plus.svg" alt="" />
+                </button>
+                <b class="last-value">4</b>
+                <button class="img-container minus-last btn-style">
+                  <img src="images/icon-minus.svg" alt="" />
+                </button>
+              </div>
+              <div class="middle">
+                <div class="top">
+                  <div class="top-left">
+                    <img
+                      src="images/avatars/image-ramsesmiron.png"
+                      alt=""
+                      class="img"
+                    />
+                    <b>ramsesmiron</b>
+                    <p>1 week ago</p>
+                  </div>
+                  <div class="top-right">
+                    <button class="last-reply btn-style">
+                      <img src="images/icon-reply.svg" alt="" />
+                      <b> Reply</b>
+                    </button>
+                  </div>
+                </div>
+                <div class="middle-text">
+                  <p>
+                    <b class="quote">@maxblagun</b>
+                    If you're still new, I'd recommend focusing on the
+                    fundamentals of HTML, CSS, and JS before considering React.
+                    It's very tempting to jump ahead but lay a solid foundation
+                    first.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Modal Section  -->
+          <!-- Reply Modal  -->
+          <div class="reply-section">
+            <div class=".bar-left"></div>
+            <div class="modal last-reply-modal">
+              <div class="bottom-section">
+                <img
+                  src="images/avatars/image-juliusomo.png"
+                  alt="user-img"
+                  class="img"
+                />
+                <textarea
+                  name=""
+                  id=""
+                  style="resize: none"
+                  placeholder="Add a comment..."
+                  class="reply-text-last"
+                >
+@maxblagun, </textarea
+                >
+                <button class="btn-send btn-last-modal-reply">Reply</button>
+              </div>
+            </div>
+          </div>
+          <!-- Reply Modal  -->
+
+          <!-- Modal Edit  -->
+          <div class="reply-section">
+            <div class=".bar-left"></div>
+            <div class="top-modal-width modal-edit-last">
+              <div class="single-post manage-width">
+                <div class="left">
+                  <button class="img-container btn-style up">
+                    <img src="images/icon-plus.svg" alt="" />
+                  </button>
+                  <b class="text">0</b>
+                  <button class="img-container btn-style down">
+                    <img src="images/icon-minus.svg" alt="" />
+                  </button>
+                </div>
+                <div class="middle top-modal-width">
+                  <div class="top">
+                    <div class="top-left">
+                      <img
+                        src="images/avatars/image-juliusomo.png"
+                        alt=""
+                        class="img"
+                      />
+                      <b>juliusomo</b>
+                      <span id="you">You</span>
+                      <p>Now</p>
+                    </div>
+                    <div class="top-right edit-delete-btn">
+                      <span class="delete-container delete-last">
+                        <img src="images/icon-delete.svg" alt="" /><b
+                          class="delete"
+                          >Delete</b
+                        >
+                      </span>
+                      <span class="last-container">
+                        <img src="images/icon-edit.svg" alt="" />
+                        <b class="edit">Edit</b>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="middle-text top-text-width">
+                    <p class="width-manage"></p>
+                    <p class="last-updated-text">
+                      <b class="quote">@remsesmiron</b>
+                    </p>
+
+                    <div class="bottom-section modal-width">
+                      <textarea
+                        name=""
+                        id=""
+                        style="resize: none"
+                        placeholder="Add a comment..."
+                        class="text-area-last"
+                      >
+@remsesmiron, </textarea
+                      >
+                    </div>
+                    <div
+                      class="bottom-section"
+                      style="justify-content: flex-end; padding: 5px 0"
+                    >
+                      <button class="btn-send send-last">UPDATE</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Modal Edit  -->
+
+          <!-- Ex Modal Edit  -->
+          <div class="reply-section">
+            <div class=".bar-left"></div>
+            <div class="top-modal-width modal-edit-ex">
+              <div class="single-post manage-width">
+                <div class="left">
+                  <button class="img-container btn-style btn-up">
+                    <img src="images/icon-plus.svg" alt="" />
+                  </button>
+                  <b class="text-value">0</b>
+                  <button class="img-container btn-style btn-down">
+                    <img src="images/icon-minus.svg" alt="" />
+                  </button>
+                </div>
+                <div class="middle top-modal-width">
+                  <div class="top">
+                    <div class="top-left">
+                      <img
+                        src="images/avatars/image-juliusomo.png"
+                        alt=""
+                        class="img"
+                      />
+                      <b>juliusomo</b>
+                      <span id="you">You</span>
+                      <p>2 days ago</p>
+                    </div>
+                    <div class="top-right edit-delete-btn">
+                      <span class="delete-container delete-ex">
+                        <img src="images/icon-delete.svg" alt="" /><b
+                          class="delete"
+                          >Delete</b
+                        >
+                      </span>
+                      <span class="ex-container">
+                        <img src="images/icon-edit.svg" alt="" />
+                        <b class="edit">Edit</b>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="middle-text top-text-width">
+                    <p class="width-manage"></p>
+                    <p>
+                      <b class="quote quote-ex">@ramsesmiron, </b
+                      ><span class="ex-updated-text"
+                        >I couldn't agree more with this. Everything moves so
+                        fast and it always seems like everyone knows the newest
+                        library/framework. But the fundamentals are what stay
+                        constant.</span
+                      >
+                    </p>
+
+                    <div class="bottom-section modal-width">
+                      <textarea
+                        name=""
+                        id=""
+                        style="resize: none"
+                        placeholder="Add a comment..."
+                        class="text-area-ex"
+                      >
+@remsesmiron, </textarea
+                      >
+                    </div>
+                    <div
+                      class="bottom-section"
+                      style="justify-content: flex-end; padding: 5px 0"
+                    >
+                      <button class="btn-send send-ex">UPDATE</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Ends Modal Edit  -->
+
+          <!-- New section  -->
+          <main class="new-section">
+            <div class="">
+              <div class="top-modal-width modal-edit-new">
+                <div class="single-post">
+                  <div class="left">
+                    <button class="img-container btn-style up-1">
+                      <img src="images/icon-plus.svg" alt="" />
+                    </button>
+                    <b class="text-1">0</b>
+                    <button class="img-container down-1 btn-style">
+                      <img src="images/icon-minus.svg" alt="" />
+                    </button>
+                  </div>
+                  <div class="middle top-modal-width" id="my-width">
+                    <div class="top">
+                      <div class="top-left">
+                        <img
+                          src="images/avatars/image-juliusomo.png"
+                          alt=""
+                          class="img"
+                        />
+                        <b>juliusomo</b>
+                        <span id="you">You</span>
+                        <p>Now</p>
+                      </div>
+                      <div class="top-right edit-delete-btn">
+                        <span class="delete-container delete-new">
+                          <img src="images/icon-delete.svg" alt="" /><b
+                            class="delete"
+                            >Delete</b
+                          >
+                        </span>
+                        <span class="new-container">
+                          <img src="images/icon-edit.svg" alt="" />
+                          <b class="edit">Edit</b>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="middle-text top-text-width">
+                      <p class="width-manage"></p>
+                      <p class="new-updated-text"></p>
+
+                      <div class="bottom-section modal-width">
+                        <textarea
+                          name=""
+                          id=""
+                          style="resize: none"
+                          placeholder="Add a comment..."
+                          class="text-area-new"
+                        >
+                        </textarea>
+                      </div>
+                      <div
+                        class="bottom-section"
+                        style="justify-content: flex-end; padding: 5px 0"
+                      >
+                        <button class="btn-send send-new">UPDATE</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </main>
+          <!-- add here from javascript  -->
+
+          <!-- New section  -->
+        </section>
+
+        <!-- footer section  -->
+
+        <footer>
+          <div class="bottom-section">
+            <img
+              src="images/avatars/image-juliusomo.png"
+              alt="uer-img"
+              class="img"
+            />
+            <textarea
+              name=""
+              id=""
+              style="resize: none"
+              placeholder="Add a comment..."
+              class="input-add-new"
+            ></textarea>
+            <button class="btn-send add-modal">Send</button>
+          </div>
+        </footer>
+      </div>
+    </div>
+    <div class="delete-option">
+      <div class="content">
+        <div class="content-details">
+          <b class="delete-title">Delete comment</b>
+          <p class="delete-text">
+            Are you sure you want to delete this comment? This will remove the
+            comment and can't be undone.
+          </p>
+          <div class="modal-btn">
+            <button class="no"><b>NO, CANCEL</b></button>
+            <button class="yes"><b>YES, DELETE</b></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

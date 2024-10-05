@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Refresher</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <nav class="nav">
+      <p>Gourmet au Catering</p>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="toggle">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </nav>
+    <section id="hero">
+      <p>Le Catering</p>
+    </section>
+    <section class="main-section">
+      <article id="about">
+        <div class="img-container">
+          <img src="images/about.jpeg" alt="about-image" class="img" />
+        </div>
+        <div class="about-article">
+          <p class="title-text">About Catering</p>
+          <p class="sub-title-text">Tradition Since 1889</p>
+          <p class="dark-text">
+            The Catering was founded in blabla by Mr. Smith in lorem ipsum dolor
+            sit amet, consectetur adipiscing elit consectetur adipiscing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+            nisi ut aliquip ex ea commodo consequat. Duis aute iruredolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur.We only use <span>seasonal</span> ingredients.
+          </p>
+          <p class="fade-text">
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+            officia deserunt mollit anim id est laborum consectetur adipiscing
+            elit, sed do eiusmod temporincididunt ut labore et dolore magna
+            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+            laboris nisi ut aliquip ex ea commodo consequat.
+          </p>
+        </div>
+      </article>
+      <article id="menu">
+        <div class="about-article">
+          <p class="title-text">Our Menu</p>
+          <div class="menu-text">
+            <p class="menu-title-text">Bread Basket</p>
+            <p class="menu-desc-text">
+              Assortment of fresh baked fruit breads and muffins 5.50
+            </p>
+          </div>
+          <div class="menu-text">
+            <p class="menu-title-text">Honey Almond Granola with Fruits</p>
+            <p class="menu-desc-text">
+              Natural cereal of honey toasted oats, raisins, almonds and dates
+              7.00
+            </p>
+          </div>
+          <div class="menu-text">
+            <p class="menu-title-text">Belgian Waffle</p>
+            <p class="menu-desc-text">Honey Almond Granola with Fruits</p>
+          </div>
+          <div class="menu-text">
+            <p class="menu-title-text">Bread Basket</p>
+            <p class="menu-desc-text">
+              Vanilla flavored batter with malted flour 7.50
+            </p>
+          </div>
+          <div class="menu-text">
+            <p class="menu-title-text">Blueberry Pancakes</p>
+            <p class="menu-desc-text">
+              With syrup, butter and lots of berries 8.50
+            </p>
+          </div>
+        </div>
+        <div class="img-container">
+          <img src="images/menu.jpeg" alt="about-image" class="img" />
+        </div>
+      </article>
+      <section class="contact-section" id="contact">
+        <p class="contact-title-text">Contact</p>
+        <p class="contact-top-text">
+          We offer full-service catering for any event, large or small. We
+          understand your needs and we will cater the food to satisfy the bigger
+          st criteria of them all, both look and taste. Do not hesitate to
+          contact us.
+        </p>
+        <p class="contact-mid-text">
+          Catering Service, 42nd Living St, 43043 New York, NY
+        </p>
+        <p class="contact-bottom-text">
+          You can also contact us by phone 00553123-2323 or email
+          catering@catering.com, or you can send us a message here:
+        </p>
+        <form>
+          <input type="text" placeholder="Name" />
+          <input type="number" placeholder="How many people" />
+          <input type="datetime-local" placeholder="09/13/2024 02:48:00 PM" />
+          <input type="text" placeholder="Message | Special requirements " />
+
+          <button>SEND MESSAGE</button>
+        </form>
+      </section>
+    </section>
+    <footer>
+      <p>Silvernus &copy; 2024 Internship Project</p>
+    </footer>
+  </body>
+</html>

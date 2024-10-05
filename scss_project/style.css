@@ -1,0 +1,200 @@
+p {
+  font-size: 0.9rem;
+  line-height: 22.5px;
+  padding: 10px 0;
+}
+
+h1 {
+  font-size: 2.3rem;
+  font-weight: 600;
+  line-height: 54px;
+  padding-bottom: 10px;
+}
+
+h2 {
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 36px;
+  padding: 15px 0;
+}
+
+h3 {
+  font-size: 1.35rem;
+  font-weight: normal;
+  line-height: 22.5px;
+  padding-bottom: 10px;
+}
+
+h4 {
+  font-size: 1.15rem;
+  font-weight: normal;
+  line-height: 22.5px;
+  padding-bottom: 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f1f1;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.nav-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 0;
+}
+.nav-section .span-text {
+  padding: 1px 5px;
+  margin-left: 1px;
+  background-color: #2f2f2f;
+  color: #f1f1f1;
+  font-size: 1rem;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 60% 30%;
+  justify-content: center;
+  gap: 30px;
+}
+.container .main-container {
+  border-radius: 10px;
+}
+.container .main-container .title-heading {
+  overflow: hidden;
+  background-color: #ffffff;
+  margin-bottom: 50px;
+  box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.3);
+}
+.container .main-container .title-heading img {
+  width: 100%;
+  max-height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.container .main-container .title-heading .title-text {
+  padding: 0 10px;
+}
+.container .main-container .title-heading .bottom-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+.container .main-container .title-heading .bottom-section .btn {
+  font-weight: bold;
+  line-height: 22.5px;
+  text-align: center;
+  padding: 10px 20px;
+  background-color: transparent;
+  border: 1px solid #cccccc;
+}
+.container .main-container .title-heading .bottom-section .btn:hover {
+  background-color: #cecece;
+  cursor: pointer;
+}
+.container .main-container .title-heading .bottom-section .comment-span, .container .main-container .title-heading .bottom-section .comment-spanB {
+  padding: 1px 5px;
+  margin-left: 1px;
+  background-color: #2f2f2f;
+  color: #f1f1f1;
+  font-size: 1rem;
+}
+.container .main-container .title-heading .bottom-section .comment-spanB {
+  border-radius: 50%;
+}
+.container .main-container .title-heading .post .post-title {
+  height: 70px;
+  background-color: #f1f1f1;
+  margin-bottom: 5px;
+}
+.container .main-container .title-heading .post .post-title h2 {
+  padding-left: 10px;
+}
+.container .main-container .title-heading .post .post-section {
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  gap: 15px;
+  border-bottom: 2px solid #f1f1f1;
+}
+.container .main-container .title-heading .post .post-section:hover {
+  background-color: #cecece;
+  cursor: pointer;
+}
+.container .main-container .title-heading .post .post-section .post-img {
+  width: 50px;
+}
+.container .main-container .title-heading .post .post-section img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.container .main-container .title-heading .post .post-section .post-text h4,
+.container .main-container .title-heading .post .post-section .post-text p {
+  line-height: 3px;
+}
+.container .main-container .title-heading .post .tags-section {
+  padding: 10px;
+  margin-bottom: 20px;
+}
+.container .main-container .title-heading .post .tags-section .tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.container .main-container .title-heading .post .tags-section .tags p {
+  font-size: 0.85rem;
+  padding: 0 7px;
+  background-color: #f1f1f1;
+}
+.container .main-container .title-heading .post .tags-section .tags #active {
+  background-color: #2f2f2f;
+  color: #ffffff;
+}
+
+footer {
+  background-color: #616161;
+  height: 150px;
+  padding: 20px;
+  color: #ffffff;
+}
+footer #btn-previous {
+  padding: 0 15px;
+  margin-right: 10px;
+  color: #cecece;
+  border: none;
+  background-color: #444444;
+}
+footer #btn-previous:hover {
+  background-color: #b0afaf;
+  cursor: not-allowed;
+}
+footer #btn-next {
+  padding: 0 15px;
+  background-color: #2f2f2f;
+  color: #ffffff;
+  border: none;
+}
+footer #btn-next:hover {
+  background-color: #b0afaf;
+  cursor: pointer;
+  color: #2f2f2f;
+}
+footer p span a {
+  color: #ffffff;
+}
+
+@media screen and (max-width: 850px) {
+  .container {
+    grid-template-columns: 90%;
+  }
+}/*# sourceMappingURL=style.css.map */

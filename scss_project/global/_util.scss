@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #f1f1f1;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+@mixin span {
+  padding: 1px 5px;
+  margin-left: 1px;
+  background-color: #2f2f2f;
+  color: #f1f1f1;
+  font-size: 1rem;
+}
+
+@mixin btn-readMore {
+  font-weight: bold;
+  line-height: 22.5px;
+  text-align: center;
+  padding: 10px 20px;
+  background-color: transparent;
+  border: 1px solid #cccccc;
+}
+
+@mixin shadow {
+  box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+$padding-upDown: 3rem 0;
+
+@mixin breakpoint {
+  .container {
+    grid-template-columns: 90%;
+  }
+}

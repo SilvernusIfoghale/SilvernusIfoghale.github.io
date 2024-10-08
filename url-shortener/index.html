@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>URL shortening</title>
+  </head>
+  <body>
+    <nav class="nav-container">
+      <section class="nav-section">
+        <div class="left-nav">
+          <h1 class="logo-title">Shortly</h1>
+          <div class="left-nav-content">
+            <ul>
+              <li><a href="#">Features</a></li>
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">Resources</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="right-nav">
+          <ul>
+            <li><a href="#">Login</a></li>
+            <button>Sign Up</button>
+          </ul>
+        </div>
+        <div class="toggle-container">
+          <div class="toggle-bar">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+          <div class="toggle-close">
+            <i class="fa-solid fa-xmark"></i>
+          </div>
+        </div>
+      </section>
+    </nav>
+    <section class="hero-container">
+      <div class="hero-section">
+        <div class="left-hero">
+          <h1>More than just shorter links</h1>
+          <p>
+            Build your brand's recognition and get detailed insights on how your
+            links are performing.
+          </p>
+          <button class="btn-get-started">Get Started</button>
+        </div>
+        <div class="right-hero">
+          <div class="img-container">
+            <img src="/images/illustration-working.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <main class="main-container">
+      <section class="main-section">
+        <div class="input-container">
+          <div class="input-wrapper">
+            <input
+              type="text"
+              placeholder="Shorten a link here..."
+              class="input"
+            />
+            <p class="causion">Please add a link</p>
+          </div>
+          <button class="btn-shorten">Shorten it!</button>
+        </div>
+        <div class="here"></div>
+        <!-- <section class="output-display">
+          <div class="single">
+            <div class="left-output">
+              <b>http://www.frontendmentor.io</b>
+            </div>
+            <div class="right-output">
+              <b>http://www.frontend</b>
+              <button class="btn-copy">copy</button>
+            </div>
+          </div>
+        </section> -->
+        <!-- <section class="output-display">
+          <div class="single">
+            <div class="left-output">
+              <b>http://www.frontendmentor.io</b>
+            </div>
+            <div class="right-output">
+              <b>http://www.frontend</b>
+              <button>copy</button>
+            </div>
+          </div>
+        </section> -->
+        <section class="statistics">
+          <div class="statistic-content">
+            <h2>Advanced Statistics</h2>
+            <p>
+              Track how your links are performing across the web with our
+              advanced statistics dashboard.
+            </p>
+          </div>
+        </section>
+        <section class="detailed-container add-width">
+          <div class="detailed-wrapper">
+            <div class="detailed-single-wrapper">
+              <div class="detailed-content">
+                <div class="detailed-img-wrapper">
+                  <div class="detailed-img">
+                    <img
+                      src="/images/icon-brand-recognition.svg"
+                      alt="detailed-img"
+                    />
+                  </div>
+                </div>
+                <div class="detailed-down">
+                  <h3>Brand Recognition</h3>
+                  <p>
+                    Boost your brand recognition with each click. Generic links
+                    don't mean a thing. Branded links help instil confidence in
+                    your content.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="detailed-wrapper add-width">
+            <div class="detailed-single-wrapper">
+              <div class="detailed-content">
+                <div class="detailed-img-wrapper">
+                  <div class="detailed-img">
+                    <img
+                      src="/images/icon-detailed-records.svg"
+                      alt="detailed-img"
+                    />
+                  </div>
+                </div>
+                <div class="detailed-down">
+                  <h3>Detailed Records</h3>
+                  <p>
+                    Gain insights into who is clicking your links. Knowing when
+                    and where people engage with your content helps inform
+                    better decisions.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="detailed-wrapper add-more-width">
+            <div class="detailed-single-wrapper">
+              <div class="detailed-content">
+                <div class="detailed-img-wrapper">
+                  <div class="detailed-img">
+                    <img
+                      src="/images/icon-fully-customizable.svg"
+                      alt="detailed-img"
+                    />
+                  </div>
+                </div>
+                <div class="detailed-down">
+                  <h3>Fully Customizable</h3>
+                  <p>
+                    Improve brand awareness and content discoverability through
+                    customizable links. supercharging audience engagement.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="line"></div>
+        </section>
+      </section>
+    </main>
+    <article class="article-section">
+      <div class="article-content">
+        <h2>Boost your links today</h2>
+        <button class="btn-get-started">Get Started</button>
+      </div>
+    </article>
+    <footer class="footer-section">
+      <div class="footer-content">
+        <div class="left-footer">
+          <h2>Shortly</h2>
+        </div>
+        <div class="right-footer">
+          <div class="features">
+            <b class="bold-title">Features</b>
+            <div class="links">
+              <p>Link Shortening</p>
+              <p>Branded Links</p>
+              <p>Link Shortening</p>
+            </div>
+          </div>
+          <div class="resources">
+            <b class="bold-title">Resources</b>
+            <div class="links">
+              <p>Blog</p>
+              <p>Developers</p>
+              <p>Support</p>
+            </div>
+          </div>
+          <div class="company">
+            <b class="bold-title">Company</b>
+            <div class="links">
+              <p>About</p>
+              <p>Our Team</p>
+              <p>Careers</p>
+              <p>Contact</p>
+            </div>
+          </div>
+          <div class="socials">
+            <div class="img-container">
+              <img src="images/icon-facebook.svg" alt="" />
+            </div>
+            <div class="img-container">
+              <img src="images/icon-twitter.svg" alt="" />
+            </div>
+            <div class="img-container">
+              <img src="images/icon-pinterest.svg" alt="" />
+            </div>
+            <div class="img-container">
+              <img src="images/icon-instagram.svg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

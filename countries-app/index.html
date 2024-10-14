@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Countries App</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <h3>Where in the world?</h3>
+        <div class="right-container">
+          <!-- <i class="fa-solid fa-moon"></i> -->
+          <i class="fa-regular fa-moon"></i>
+          <p id="dark-mode">Dark Mode</p>
+        </div>
+      </div>
+    </header>
+    <section class="main-container">
+      <div class="main">
+        <section class="top">
+          <div class="top-container">
+            <div class="input-container">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <input
+                type="text"
+                placeholder="Search for a country..."
+                class="input"
+              />
+            </div>
+            <div class="select-container">
+              <select name="region" id="region" class="regions">
+                <option value="" hidden>Filter by Region</option>
+              </select>
+            </div>
+          </div>
+        </section>
+        <main class="flag-section">
+          <div class="flag-container">
+            <!-- <div class="single-card">
+              <div class="img-container">
+                <img src="/E-commerce Picture.jpg" alt="" />
+              </div>
+              <div class="text-container">
+                <p class="country">Germany</p>
+                <p><b>Population:</b> <span>803,038,080 </span></p>
+                <p><b>Region:</b> <span>Europe</span></p>
+                <p><b>Capital:</b> <span>Berlin</span></p>
+              </div>
+            </div> -->
+          </div>
+        </main>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>

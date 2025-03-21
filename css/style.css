@@ -1,0 +1,39 @@
+/* universal selector  */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin-top: 200px;
+}
+
+.left-section {
+  width: 60%;
+  float: left;
+  margin-right: 50px;
+}
+p {
+  /* padding: top/bottom  left/right  */
+  padding: 10px 0;
+}
+#anonymous {
+  color: rgb(52, 135, 251);
+}
+#web-dev {
+  color: rgb(21, 241, 135);
+}
+
+.right-section .img-container img {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  border: 5px solid cyan;
+  clear: both;
+}
+
+/* .border {
+  border: 2px solid gray;
+  padding: 80px;
+  margin: 100px;
+} */
